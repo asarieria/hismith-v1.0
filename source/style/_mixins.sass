@@ -1,0 +1,83 @@
+//vertical center
+=vcenter
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+//horizontal center
+=wcenter
+	position: absolute	
+	left: 50%
+	transform: translate(-50%, 0)
+
+//horizontal center
+=hcenter
+	position: absolute	
+	top: 50%
+	transform: translate(0, -50%)
+
+//Позиционирование картинки фона по макс размерам блока
+=cover
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 50%
+
+=ffb
+	font-family: "Supermolot-Bold"
+
+// Width Content
+@mixin media($media)
+	@if $media == screen-xll
+		@media only screen and (min-width: 1920px)
+			@content
+
+	@else if $media == screen-xl
+		@media only screen and (min-width: 1440px) and (max-width: 1919px)
+			@content
+
+	@else if $media == screen-lmin
+		@media only screen and (max-width: 1439px)
+			@content
+	
+	@else if $media == screen-lmax
+		@media only screen and (max-width: 1200px)
+			@content
+
+	@else if $media == screen-md
+		@media only screen and (max-width: 1024px)
+			@content
+	
+	@else if $media == screen-mdl
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)
+			@content
+	
+	@else if $media == screen-mdp
+		@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+			@content
+
+	@else if $media == screen-sm
+		@media only screen and (max-width: 767px)
+			@content
+
+	@else if $media == screen-xsl
+		@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape)
+			@content
+
+	@else if $media == screen-xs
+		@media only screen and (max-width: 567px)
+			@content
+
+// Height Content
+@mixin heigh($media)
+	@if $media == heigh-xs
+		@media only screen and (min-width: 768px) and (max-width: 1440px) and (min-height: 550px) and (max-height: 700px) and (orientation: landscape)
+			@content
+
+	@else if $media == heigh-sm
+		@media only screen and (min-width: 768px) and (max-width: 1440px) and (min-height: 701px) and (max-height: 860px) and (orientation: landscape)
+			@content
+
+	@else if $media == heigh-md
+		@media only screen and (min-width: 1200px) and (max-width: 1600px) and (min-height: 861px) and (max-height: 900px)and (orientation: landscape)
+			@content

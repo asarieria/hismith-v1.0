@@ -1,0 +1,74 @@
+/* Навигация для слайдеров */
+.stats__nav,
+.comment__nav
+	width: 180px
+	position: absolute
+	margin-left: -90px
+	bottom: 80px
+	left: 50%
+	text-align: center
+	height: 34px
+
+.stats__nav-count,
+.comment__nav-count,
+.design__nav-count
+	font-size: 12px
+	vertical-align: middle
+
+.stats__nav-count,
+.comment__nav-count
+	color: #fff
+
+
+.design__nav
+	position: relative
+	width: 180px
+	margin: 0 auto auto auto
+	.pagingInfo
+		color: #071d43
+		text-align: center
+		display: inherit
+		line-height: 34px
+
+
+.stats__nav-left,
+.stats__nav-right,
+.comment__nav-left,
+.comment__nav-right,
+.design__nav-left,
+.design__nav-right
+	display: block
+	width: 34px
+	height: 100%
+	background-repeat: no-repeat
+	background-position: center
+	position: absolute
+	top: 0
+
+.stats__nav-left,
+.comment__nav-left
+	background-image: url(../img/slidebtn/btn-left-2-normal_2.svg)
+	left: 0
+	&:hover
+		background-image: url(../img/slidebtn/btn-left-2-hover.svg)
+.stats__nav-right,
+.comment__nav-right
+	background-image: url(../img/slidebtn/btn-right-2-normal_2.svg)
+	right: 0
+	&:hover
+		background-image: url(../img/slidebtn/btn-right-2-hover.svg)
+
+.design__nav-left
+	background-image: url(../img/slidebtn/btn-left-2-normal.svg)
+	left: 0
+	&:hover
+		background-image: url(../img/slidebtn/btn-left-2-hover.svg)
+.design__nav-right
+	background-image: url(../img/slidebtn/btn-right-2-normal.svg)
+	right: 0
+	&:hover
+		background-image: url(../img/slidebtn/btn-right-2-hover.svg)
+
+@include heigh (heigh-xs)
+	.stats__nav
+		bottom: 40px

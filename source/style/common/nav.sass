@@ -1,0 +1,105 @@
+// Скрытая навигация
+.fixed-wrap
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 99
+	height: 70px
+
+.wrap
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 99
+	display: none
+	
+.main-nav
+	display: none
+	position: absolute
+	justify-content: space-between
+	flex-direction: column
+	width: 100%
+	height: 100vh
+	opacity: 0.98
+	background-color: #191919
+	top: 0
+	z-index: 7
+	padding: 0
+	.main-nav__lists
+		text-align: center
+		margin: auto
+	.main-nav__list
+		width: 100%
+	.main-nav__link
+		color: rgba(255,255,255,.3)
+		font-size: 34px
+		font-family: "Supermolot-Thin"
+		display: block
+		padding: 15px 0
+		transition: all .25s
+		&:hover
+			border-bottom: none
+			color: #fff
+			text-decoration: none
+			transition: all .25s
+
+.main-nav__footer
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-around
+	width: 100%
+	margin: 0 auto 40px
+	color: #fff
+	font-size: 16px
+.span--red
+	color: #de1724
+	font-family: "Supermolot-Bold"
+	margin-left: 5px
+	letter-spacing: 1px
+	a
+		text-decoration: none
+		font-size: 16px
+		color: #de1724
+		&:hover
+			text-decoration: none
+			color: #de1724
+
+// Toggle
+.toggle-mnu 
+	display: none
+	width: 30px
+	height: 45px
+	position: absolute
+	right: 50%
+	margin-right: -14px
+	z-index: 8
+	top: 0
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+	span:after
+		top: 18px
+	span 
+		position: relative
+		display: block
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: #fff
+		transition: all 0.3s
+		backface-visibility: hidden
+	&.on span 
+		background-color: transparent
+	&.on span:before 
+		background: #fff
+		transform: rotate(45deg) translate(-1px, 0px)
+	&.on span:after 
+		background: #fff
+		transform: rotate(-45deg) translate(6px, -7px)
+	@include media(screen-md)
+		display: block
+

@@ -1,0 +1,141 @@
+/*~~~~~~~~~~~~~~~ Exclusive Design ~~~~~~~~~~~~~~~*/
+/* (min-width: 1920px) */
+@include media(screen-xll)
+	.exc-design
+		.container
+			width: 1720px
+
+/* (min-width: 1440px) and (max-width: 1919px) */
+@include media(screen-xl)
+	.exc-design
+		padding: 0 80px
+		.container
+			width: 1440px
+
+/* (max-width: 1200px) */
+@include media(screen-lmax)
+	.exc-design .container
+		width: 92%
+	.exc-design__slide-wrap
+		// margin-left: 40px
+	.exc-design__title
+		font-size: 30px
+	.exc-design__lists
+		margin-left: 40px
+		h3
+			font-size: 40px
+	.exc-design__link
+		font-size: 14px
+	.exc-design__item
+		max-width: 360px
+	.exc-design__text
+		max-width: 360px
+
+/* (max-width: 1024px) */
+@include media(screen-md)
+	.exc-design__title
+		line-height: 32px
+	.exc-design__lists
+		h3
+			font-size: 30px
+	.exc-design__slide-wrap
+		margin-left: 20px
+		margin-right: 20px
+
+@media only screen and (max-width: 1023px)
+	.exc-design__title
+		font-size: 26px
+		max-width: 210px
+	.exc-design__item
+		background-size: 92% auto
+		background-position: 50% 65%
+		max-width: 280px
+		margin: auto auto -20px auto
+	.exc-design__text
+		max-width: 280px
+	
+
+// /* (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) */
+// @include media (screen-mdl)
+// 	.exc-design__bg
+// 		height: 594px
+// 	.exc-design__slide-wrap
+// 		height: 594px
+
+/* (max-width: 854px) */
+@media only screen and (max-width: 854px)
+	.exc-design .container
+		margin: auto 40px
+
+/* (max-width: 767px) */
+@include media(screen-sm)
+	.exc-design .container
+		width: 100%
+	.exc-design
+		padding: 40px 0
+		.container
+			width: 100%
+			margin: auto
+		.exc-design__slide
+			padding-left: 0
+			padding-right: 0
+
+	.exc-design__slide
+		padding-top: 25px
+	.exc-design__slide-wrap
+		height: auto
+	.exc-design__item
+		padding: 0
+		margin: auto
+		padding-bottom: 20px
+		background-size: 75% auto
+		background-position: 50% 100%
+	.design__nav
+		margin-top: 40px
+	.exc-design__title
+		max-width: 100%
+		font-size: 22px
+	.exc-design__text
+		font-size: 14px
+
+	.exc-design__bg
+		height: 420px
+		&:before,&:after
+			border: none
+	.exc-design__bg-wrap:before
+		border: none
+	.exc-design__lists
+		h3
+			font-size: 24px
+	.exc-design__link
+		padding: 10px 0
+
+@media screen and (max-width: 480px)
+	.exc-design__lists
+		margin-left: 24px
+
+/* ------ Media Height ------ */
+/* (min-width: 800px) and (max-width: 1440px) and (min-height: 600px) and (max-height: 700px) and (orientation: landscape) */
+@include heigh(heigh-xs)
+	.exc-design
+		.container
+			margin: auto auto 30px auto
+	.exc-design__bg,
+	.exc-design__slide-wrap
+		height: 500px
+	.exc-design__item
+		padding: 0 0 60px 0
+		background-position: 50% 50%
+
+/* (min-width: 800px) and (max-width: 1440px) and (min-height: 701px) and (max-height: 860px) and (orientation: landscape) */
+@include heigh(heigh-sm)
+	.exc-design
+		.container
+			margin: auto auto 30px auto
+	.exc-design__bg,
+	.exc-design__slide-wrap
+		height: 600px
+	.exc-design__item
+		padding: 50px 0
+		background-position: 50% 72%
+/*~~~~~~~~~~~~~~~ End Exclusive Design ~~~~~~~~~~~~~~~*/

@@ -1,0 +1,240 @@
+.footer
+	padding-top: 80px
+	position: relative
+	min-height: 100%
+	background-image: radial-gradient(circle at 50% 50%, #0e1f3e, #2b4d89)
+	display: flex
+	flex-flow: column nowrap
+	justify-content: space-between
+
+.footer .container-fluid
+	padding-right: 0
+	margin-left: 0
+	margin-right: 0
+
+.footer .footer-item:last-child
+	padding-right: 0
+
+.hidden-title
+	display: none
+	width: 240px
+	font-size: 32px
+	line-height: 42px
+	color: #fff
+	font-family: 'Supermolot-Bold'
+
+.contacts__title
+	font-size: 44px
+	color: #fff
+	font-family: 'Supermolot-Black'
+
+.contacts-wrap
+	margin: 80px 0
+	font-size: 16px
+	p
+		color: #fff
+		font-family: 'Supermolot-Light'
+		margin: 8px 0
+	a
+		color: #de1724
+		font-family: 'Supermolot-Bold'
+		display: inline-block
+		margin-left: 5px
+		&:hover
+			color: #de1724
+	span
+		color: #de1724
+		font-family: 'Supermolot-Bold'
+		display: inline-block
+
+
+.footer-item__wrap
+	position: relative
+
+.footer-item__box
+	width: 240px
+	font-size: 32px
+	line-height: 42px
+	color: #fff
+	text-align: right
+	font-family: 'Supermolot-Bold'
+	position: absolute
+	right: 0
+	top: 340px
+
+.footer-copyright
+	min-height: 60px
+	border-top: 1px solid rgba(216,216,216,.13)
+	position: relative
+	width: 100%
+	margin-top: 80px
+	display: flex
+
+.footer-copyright__wrap
+	width: 55%
+	margin-left: auto
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+
+.copyright
+	color: rgba(255,255,255,.33)
+	font-size: 14px
+	font-family: 'Supermolot-Light'
+
+.to-top
+	margin-right: 100px
+	font-family: 'Supermolot-Bold'
+	font-size: 14px
+	color: rgba(255,255,255,.5)
+
+.footer-up
+	margin-left: 10px
+	&:hover
+		cursor: pointer
+#f-up:hover g
+	opacity: 1
+// Форма контактов
+.input
+	position: relative
+	z-index: 1
+	display: block
+	margin: 1em 0
+	width: 100%
+	vertical-align: top
+
+.input__field
+	position: relative
+	display: block
+	float: right
+	padding: 0.8em
+	width: 60%
+	border: none
+	border-radius: 0
+	background: #f0f0f0
+	color: #aaa
+	font-weight: bold
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+	-webkit-appearance: none
+	&:focus
+		outline: none
+
+.input__label
+	display: inline-block
+	float: right
+	padding: 0 1em
+	width: 40%
+	color: #6a7989
+	font-weight: bold
+	font-size: 70.25%
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+.input__label-content
+	position: relative
+	display: block
+	padding: 0.5em 0
+	width: 100%
+	color: rgba(255,255,255,.5)
+	font-family: 'Supermolot-Light'
+	font-size: 16px
+
+.input--hoshi
+	overflow: hidden
+
+.input__field--hoshi
+	margin-top: 1em
+	padding: 0.85em 0.15em
+	width: 100%
+	background: transparent
+	color: #fff
+	font-family: 'Supermolot-Light'
+	font-size: 16px
+
+.input__label--hoshi
+	position: absolute
+	bottom: 0
+	left: 0
+	padding: 0 0.25em
+	width: 100%
+	height: calc(100% - 1em)
+	text-align: left
+	pointer-events: none
+
+.input__label-content--hoshi
+	position: absolute
+
+.input__label--hoshi
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: calc(100% - 8px)
+		border-bottom: 3px solid rgba(216,216,216,.8)
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: calc(100% - 9px)
+		border-bottom: 3px solid rgba(216,216,216,.8)
+		margin-top: 2px
+		-webkit-transform: translate3d(-100%, 0, 0)
+		transform: translate3d(-100%, 0, 0)
+		-webkit-transition: -webkit-transform 0.3s
+		transition: transform 0.3s
+
+.input__label--hoshi-color::after
+	border-color: #d8d8d8
+
+.input__field--hoshi:focus + .input__label--hoshi::after, .input--filled .input__label--hoshi::after
+	-webkit-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+
+.input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi, .input--filled .input__label-content--hoshi
+	-webkit-animation: anim-1 0.3s forwards
+	animation: anim-1 0.3s forwards
+	color: #e72f2f
+	font-size: 12px
+
+
+@-webkit-keyframes anim-1
+	50%
+		opacity: 0
+		-webkit-transform: translate3d(1em, 0, 0)
+		transform: translate3d(1em, 0, 0)
+
+	51%
+		opacity: 0
+		-webkit-transform: translate3d(-1em, -40%, 0)
+		transform: translate3d(-1em, -40%, 0)
+
+	100%
+		opacity: 1
+		-webkit-transform: translate3d(0, -40%, 0)
+		transform: translate3d(0, -40%, 0)
+
+@keyframes anim-1
+	50%
+		opacity: 0
+		-webkit-transform: translate3d(1em, 0, 0)
+		transform: translate3d(1em, 0, 0)
+
+	51%
+		opacity: 0
+		-webkit-transform: translate3d(-1em, -40%, 0)
+		transform: translate3d(-1em, -40%, 0)
+
+	100%
+		opacity: 1
+		-webkit-transform: translate3d(0, -40%, 0)
+		transform: translate3d(0, -40%, 0)

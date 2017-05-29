@@ -1,0 +1,112 @@
+/*~~~~~~~~~~~~~~~ Deluxe Interactive ~~~~~~~~~~~~~~~*/
+/* (min-width: 1920px) */
+@include media(screen-xll)
+	.deluxe
+		.container
+			width: 1720px
+
+/* (min-width: 1440px) and (max-width: 1919px) */
+@include media(screen-xl)
+	.deluxe
+		padding: 0 80px
+		.container
+			width: 1440px
+
+/* (max-width: 1439px) */
+@include media (screen-lmin)
+	.deluxe__info-wrap
+
+/* (max-width: 1200px) */
+@include media(screen-lmax)
+	.deluxe .container
+		width: 92%
+	.deluxe__info-wrap
+		margin-left: 20px
+
+/* (max-width: 1024px) */
+@include media (screen-md)
+	.deluxe__design
+		padding-top: 120px
+	.deluxe__title
+		font-size: 30px
+	.deluxe__link
+		font-size: 14px
+	.comment__text
+		padding-right: 10px
+	.logo-dx img
+		width: 136px
+	.comment__title
+		font-size: 26px
+	.comment__text-descr
+		font-size: 14px
+		padding: 0 15px
+
+
+/* (max-width: 767px) */
+@include media (screen-sm)
+	.deluxe
+		padding: 40px 0
+		.container
+			width: 100%
+	.deluxe__design 
+		&:before, &:after
+			display: none
+	.deluxe__info-wrap
+		margin-left: 0
+		padding-bottom: 40px
+		width: 100%
+		padding-left: 10px
+	.deluxe__title
+		font-size: 24px
+		margin-bottom: 32px
+		padding-top: 0
+
+/* (min-width: 800px) and (max-width: 1440px) and (min-height: 600px) and (max-height: 700px) and (orientation: landscape) */
+@include heigh (heigh-xs)
+	.deluxe
+		.container
+			margin: auto auto 30px auto
+	.deluxe__design
+		height: 500px
+		padding-top: 20px
+	.deluxe__title
+		padding-top: 15px
+		margin-bottom: 15px
+	.deluxe__lists
+		line-height: 26px
+	.logo-dx img
+		width: 120px
+	.comment__title
+		font-size: 22px
+		margin: 20px 0
+	.comment__text-descr
+		font-size: 12px
+	.comment__text-name
+		font-size: 11px
+	.comment__nav
+		bottom: 20px
+
+
+
+/* (min-width: 800px) and (max-width: 1440px) and (min-height: 701px) and (max-height: 860px) and (orientation: landscape) */
+@include heigh (heigh-sm)
+	.deluxe
+		.container
+			margin: auto auto 30px auto
+	.deluxe__design
+		height: 600px
+		padding-top: 40px
+	.deluxe__title
+		padding-top: 20px
+		margin-bottom: 20px
+	.deluxe__lists
+		line-height: 28px
+	.comment__title
+		font-size: 24px
+		margin: 26px 0
+	.comment__nav
+		bottom: 50px
+	.logo-dx img
+		width: 130px
+
+/*~~~~~~~~~~~~~~~ End Deluxe Interactive ~~~~~~~~~~~~~~~*/

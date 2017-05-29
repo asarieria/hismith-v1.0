@@ -1,0 +1,211 @@
+/*~~~~~~~~~~~~~~~ About-us Media ~~~~~~~~~~~~~~~*/
+/* (min-width: 1920px) */
+@include media(screen-xll)
+	.about-us
+		.container
+			width: 1720px
+
+/* (min-width: 1440px) and (max-width: 1919px) */
+@include media(screen-xl)
+	.about-us
+		padding: 0 80px
+		.container
+			width: 1440px
+	.exc-design__lists
+		margin-left: 11%
+
+/* (max-width: 1439px) */
+@include media (screen-lmin)
+	.number-two,
+	.number-six
+		width: 203px
+	.about-us__info-wrap
+		margin-right: 0
+	//title
+	.about-us__title
+		width: 413px
+	//text
+	.about-us__text
+		width: 450px
+	.about-us__slogan
+		width: 410px
+
+/* (max-width: 1200px) */
+@include media (screen-lmax)
+	.about-us .container
+		width: 92%
+	.number-two,
+	.number-six
+		width: 160px
+	.about-us__info-wrap
+		width: 100%
+		margin-left: 20px
+	//title
+	.about-us__title
+		font-size: 30px
+		width: 400px
+	//slogan
+	.about-us__slogan
+		font-size: 30px
+	//text
+	.about-us__text
+		width: 420px
+	.stats__text
+		font-size: 20px
+		padding: 0 20px 70px 20px
+		text-align: left
+
+/* (max-width: 1024px) */
+@include media (screen-md)
+	.about-us
+		padding: 0
+	.number-two,
+	.number-six
+		width: 133px
+	.about-us__info-wrap
+		padding-left: 15px
+	//title
+	.about-us__title
+		font-size: 26px
+		width: 320px
+	//slogan
+	.about-us__slogan
+		font-size: 26px
+		width: 320px
+	//text
+	.about-us__text
+		width: 320px
+	.stats__text
+		font-size: 16px
+		padding: 0 20px 70px 20px
+		text-align: left
+
+// /* (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) */
+// @include media (screen-mdl)
+// 	.about-us__design
+// 		height: 594px
+// 	.about-us__info
+// 		padding-top: 80px
+// 	.about-us__text
+// 		width: 90%
+// 	.about-us__title
+// 		width: 413px
+
+/* (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) */
+@include media (screen-mdp)
+	.about-us__info
+		padding-left: 0
+	.about-us__info-wrap
+		padding-left: 0
+		margin-left: 0
+
+
+/* (max-width: 767px) */
+@include media (screen-sm)
+	.about-us .container
+		width: 100%
+	.about-us .row
+		margin-left: 0
+		margin-right: 0
+	.number-two,
+	.number-six
+		width: 100px
+	.number-two
+		left: 0
+	.about-us
+		padding: 30px 0 40px 0
+		.container
+			padding-left: 0
+			padding-right: 0
+			width: 100%
+	.about-us__info
+		padding: 0 15px
+		margin-bottom: 30px
+	.about-us__info-wrap
+		padding-left: 0
+		margin-left: 0
+	.about-us__design
+		height: 420px
+		&:before,&:after
+			border: none
+	//title
+	.about-us__title
+		font-size: 22px
+		min-width: 280px
+		width: 64%
+	//slogan
+	.about-us__slogan
+		font-size: 22px
+		min-width: 280px
+		width: 65%
+	//text
+	.about-us__text
+		min-width: 280px
+		width: 58%
+	.stats__text
+		font-size: 14px
+		min-width: 270px
+		width: 50%
+		margin: auto
+	.slide-navnav
+		bottom: 40px
+
+/* (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) */
+@include media (screen-xsl)
+	.about-us__info-wrap
+		padding: 0 40px
+	.about-us__title
+		width: 100%
+	.about-us__slogan
+		width: 100%
+	.about-us__text
+		width: 100%
+
+/* ------ Media Height ------ */
+/* (min-width: 800px) and (max-width: 1440px) and (min-height: 600px) and (max-height: 700px) and (orientation: landscape) */
+@include heigh (heigh-xs)
+	.about-us
+		.container
+			margin: auto auto 30px auto
+	.number-two, .number-six
+		width: 130px
+	.about-us__design
+		height: 500px
+	.stats__item
+		padding-bottom: 20px
+	.stats__text
+		padding: 0 20px 30px 20px
+		font-size: 18px
+	.about-us__info
+		padding-top: 15px
+	.about-us__title
+		width: 92%
+		font-size: 21px
+	.about-us__slogan
+		width: 85%
+		font-size: 21px
+	.about-us__text
+		width: 290px
+	.stats__nav
+		bottom: 30px
+
+/* (min-width: 800px) and (max-width: 1440px) and (min-height: 701px) and (max-height: 860px) and (orientation: landscape) */
+@include heigh (heigh-sm)
+	.about-us
+		.container
+			margin: auto auto 30px auto
+	.number-two, .number-six
+		width: 140px
+	.about-us__info
+		padding-top: 50px
+	.about-us__design
+		height: 600px
+	.stats__text
+		padding: 0 20px 30px 20px
+	.about-us__title
+		width: 94%
+	.about-us__slogan
+		width: 85%
+	.stats__nav
+		bottom: 35px
+/*~~~~~~~~~~~~~~~ End About-us Media ~~~~~~~~~~~~~~~*/

@@ -1,0 +1,64 @@
+.gl-btn
+	width: 190px
+	height: 40px
+	background-color: #e72e2e
+	border: none
+	color: #fff
+	text-transform: uppercase
+	position: relative
+	margin-top: 80px
+	display: inline-block
+	transition: all .14s
+	font-size: 14px
+	&:after, &:before
+		content: ""
+		display: inline-block
+		position: absolute
+		top: 0
+		bottom: 0
+	&:after
+		left: 100%
+		border-left: 10px solid #e72e2e
+		border-top: 10px solid transparent
+	&:before
+		right: 100%
+		border-right: 10px solid #e72e2e
+		border-bottom: 10px solid transparent
+	&:hover
+		filter: drop-shadow(5px 5px rgba(231, 46, 46, 0.4))
+
+.footer .gl-btn
+	width: 180px
+	margin-top: 60px
+
+.header .gl-btn
+	margin-left: 10px
+
+// width
+@include media (screen-xsl)
+	.header .gl-btn
+		margin-top: 0
+		width: 180px
+
+@include media (screen-mdl)
+	.header .gl-btn
+		margin-top: 40px
+
+@include media (screen-sm)
+	.footer .gl-btn
+		width: 160px
+
+@include media (screen-xs)
+	.header .gl-btn
+		width: 180px
+
+	/* ------ Media Height ------ */
+@include heigh (heigh-xs)
+	.header .gl-btn
+		margin-top: 30px
+	.footer .gl-btn
+		margin-top: 10px
+
+@include heigh(heigh-sm)
+	.footer .gl-btn
+		margin-top: 35px

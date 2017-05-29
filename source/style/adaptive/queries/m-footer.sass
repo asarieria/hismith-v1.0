@@ -1,0 +1,47 @@
+@include media (screen-sm)
+	.footer-item:first-child
+		display: none
+	.hidden-title
+		display: block
+		margin-bottom: 40px
+		padding-top: 40px
+	.footer
+		padding-top: 60px
+	.contacts-wrap
+		margin: 40px 0
+		p
+			margin: 16px 0
+	.footer-copyright__wrap
+		flex-direction: column
+		padding-bottom: 30px
+		margin: auto
+	.copyright
+		height: 60px
+		line-height: 60px
+	.to-top
+		margin-right: 0
+
+/* ------ Media Height ------ */
+@include heigh (heigh-xs)
+	.footer
+		padding-top: 50px
+	.contacts-wrap
+		margin: 15px 0
+		font-size: 14px
+	.footer-item__box
+		top: 230px
+	.contacts__title
+		font-size: 32px
+	.footer-copyright
+		margin-top: 20px
+
+@include heigh(heigh-sm)
+	.footer
+		padding-top: 50px
+	.contacts-wrap
+		margin: 40px 0
+	.footer-item__box
+		top: 310px
+	.footer-copyright
+		margin-top: 60px
+

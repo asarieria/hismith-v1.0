@@ -1,0 +1,79 @@
+body 
+	font-family: "Supermolot"
+
+.row
+	position: relative
+
+.stats__wrapper .slick-slide
+	outline: none
+	&:focus
+		outline: none
+
+.logo
+	width: 227px
+	height: 31px
+	position: absolute
+	background-size: 100% auto
+	background-repeat: no-repeat
+	z-index: 10
+	left: 40px
+	top: 20px
+
+
+section
+	height: auto !important
+
+.header
+	height: 100% !important
+
+.header .wrap
+	display: none
+	.logo
+		background-image: url(/assets/img/logo-white.svg)
+			
+@include media (screen-sm)
+	.fixed-wrap
+		display: none
+	.header .wrap
+		display: block
+
+.viewing-page-1
+	.logo
+		background-image: url(/assets/img/logo-white.svg)
+	#st-polygon g
+		stroke: rgba(255,255,255,.7)
+	ul.onepage-pagination li a
+		border: 1px solid rgba(255,255,255,.3)
+	ul.onepage-pagination li a.active:before
+		color: rgba(255,255,255,.9)
+
+.viewing-page-2
+	.logo
+		background-image: url(/assets/img/logo.svg)
+	.toggle-mnu
+		span, span:after, span:before
+			background-color: #4A4A4A
+				
+.viewing-page-3
+	.logo
+		background-image: url(/assets/img/logo.svg)
+	.toggle-mnu
+		span, span:after, span:before
+			background-color: #4A4A4A
+
+.viewing-page-4
+	.logo
+		background-image: url(/assets/img/logo.svg)
+	.toggle-mnu
+		span, span:after, span:before
+			background-color: #4A4A4A
+
+.viewing-page-5
+	.logo
+		background-image: url(/assets/img/logo-white.svg)
+	#st-polygon
+		stroke: rgba(255,255,255,.7)
+	ul.onepage-pagination li a
+		border: 1px solid rgba(255,255,255,.3)
+	ul.onepage-pagination li a.active:before
+		color: rgba(255,255,255,.9)

@@ -1,0 +1,51 @@
+extends ../_template
+
+block variables
+	- var title = 'Hismith | Главная страница'
+
+block content
+	ul.onepage-pagination
+		li
+			a(href='#1', data-index='1')
+		li
+			a.active(href='#2', data-index='2')
+		li
+			a(href='#3', data-index='3')
+		li
+			a(href='#4', data-index='4')
+	.fixed-wrap
+		nav.main-nav
+			ul.main-nav__lists
+				li.main-nav__list 
+					a(href="#").main-nav__link Главная
+				li.main-nav__list 
+					a(href="#").main-nav__link О нас
+				li.main-nav__list 
+					a(href="#").main-nav__link Что мы умеем
+				li.main-nav__list 
+					a(href="#").main-nav__link Нас выбрали
+				li.main-nav__list 
+					a(href="#").main-nav__link Контакты
+			.main-nav__footer
+				.call Позвоните нам 
+					span.span--red
+						a(href="tel: +74957755575") +7 495 775 55 75
+				.write Напишите нам 
+					span.span--red
+						a(href="mailto:hello@hismith.ru") hello@hismith.ru
+				.come Приезжайте к нам 
+					span.span--red.
+						в Москву
+		.logo
+		button.toggle-mnu
+			span
+	.section-wrap
+		include ../sections/header.pug
+
+		include ../sections/about-us.pug
+
+		include ../sections/exc-design.pug
+
+		include ../sections/deluxe.pug
+
+		include ../sections/footer.pug

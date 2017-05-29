@@ -1,0 +1,119 @@
+/*~~~~~~~~~~~~~~~ Header Media ~~~~~~~~~~~~~~~*/
+/* (min-width: 1920px) */
+@include media (screen-xll)
+	.header__text
+		line-height: 1.15
+
+/* (min-width: 1441px) and (max-width: 1919px) */
+@include media (screen-xl)
+	.header__text
+		font-size: 66px
+
+/* (max-width: 1440px) */
+@include media (screen-lmin)
+	.header__text
+		font-size: 56px
+
+/* (max-width: 1200px) */
+@include media (screen-lmax)
+	.header__inner
+		max-width: 462px
+		margin-left: 20px
+
+
+@media only screen and (max-width: 992px)
+	.main-nav__footer
+		flex-flow: column nowrap
+		justify-content: space-around
+		align-items: center
+	.write
+		margin: 24px 0
+
+/* (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) */
+@include media (screen-mdl)
+	header
+		min-height: 768px
+	.header__text
+		font-size: 66px
+	.header__inner
+		margin-left: 100px
+		margin-top: 160px
+		max-width: 545px
+
+/* (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) */
+@include media (screen-mdp)
+	.header__inner
+		margin-left: 40px
+
+/* (max-width: 767px) */
+@include media (screen-sm)
+	.header__text
+		font-size: 56px
+	.toggle-mnu
+		right: 40px
+
+@media only screen and (max-width: 568px)
+	.header__inner
+		margin-left: 0
+	.logo
+		width: 155px
+	.main-nav
+		min-height: 100%
+		padding-top: 100px
+		height: auto
+		.main-nav__link
+			font-size: 22px
+			padding: 10px 0
+		.main-nav__lists
+			margin: auto auto 60px auto
+	.main-nav__footer
+		font-size: 14px
+
+/* (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) */
+@include media (screen-xsl)
+	.header
+		min-height: 320px
+	.header__text
+		font-size: 30px
+		line-height: 1.33
+	.main-nav__footer
+		display: none
+	.toggle-menu
+		right: 20px
+		top: 21px
+	.main-nav
+		padding-top: 40px
+		.main-nav__link
+			font-size: 20px
+			padding: 10px 0
+	.header__inner
+		margin-top: 70px
+		max-width: 100%
+		margin-right: 60px
+		margin-left: 20px
+
+
+/* (min-width: 320px) and (max-width: 567px) */
+@include media (screen-xs)
+	.header
+		min-height: 568px
+	.header__text
+		font-size: 30px
+		line-height: 1.33
+	.header__inner
+		margin-top: 120px
+
+/* ------ Media Height ------ */
+@include heigh (heigh-xs)
+	.header__inner
+		margin-top: 80px
+
+@include heigh (heigh-sm)
+	.header__inner
+		margin-top: 100px
+		margin-left: 40px
+
+@include heigh (heigh-md)
+	.header__inner
+		margin-top: auto
+/*~~~~~~~~~~~~~~~ End Header Media ~~~~~~~~~~~~~~~*/

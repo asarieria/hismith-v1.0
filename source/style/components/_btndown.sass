@@ -1,0 +1,40 @@
+.btn-down
+	position: absolute
+	bottom: -22px
+	left: 50%
+	transform: translate(-50%)
+	transition: all .25s
+	z-index: 8
+	background: url(../img/btn-down-normal.svg) 0% 0% no-repeat
+	width: 49px
+	height: 49px
+	cursor: pointer
+	z-index: 7
+	&:hover
+		background: url(../img/btn-down-hover.svg) 0% 0% no-repeat
+	&:focus
+		background: url(../img/btn-down-focus.svg) 0% 0% no-repeat
+		outline: none
+		
+.header .btn-down
+	bottom: 40px
+	
+// width screen
+@include media(screen-xll)
+// 	.about-us .btn-down
+// 		bottom: 85px
+
+@include media(screen-xl)
+	// .about-us .btn-down
+	// 	bottom: 55px
+
+@include media(screen-lmin)
+	// .about-us .btn-down
+	// 	bottom: 50px
+
+@include media(screen-sm)
+	.btn-down
+		display: none
+
+// height screen
+@include heigh (heigh-xs)
