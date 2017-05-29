@@ -4,3 +4,12 @@ block variables
 	- var title = 'Ошибка 404'
 
 block content
+	.error-wrapper
+		.container-fluid
+			.col-lg-6
+			.error-item.col-lg-6
+				.error-image
+					img(src="/assets/img/ic-404.svg", alt="")
+				.error-title Страница не найдена
+				.error-text К сажелению, такой страницы не существует. Вероятно, она была удалена, либо её здесь никогда не было. Переходите на главную страницу – там Вы сможете найти много полезной информации
+				button.error-btn На главную
