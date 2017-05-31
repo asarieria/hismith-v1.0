@@ -1,3 +1,5 @@
+html, body 
+	height: 100%
 body 
 	font-family: "Supermolot"
 
@@ -31,6 +33,12 @@ section
 		background-image: url(/assets/img/logo-white.svg)
 
 @include media (screen-sm)
+	.fixed-wrap
+		display: none
+	.header .wrap
+		display: block
+
+@include heigh (heigh-xs)
 	.fixed-wrap
 		display: none
 	.header .wrap
