@@ -1,11 +1,19 @@
 $(document).ready(function(){
-	
-var nav = $(".main-nav");
-$(".toggle-mnu").click(function() {
-	$(this).toggleClass("on");
-	nav.slideToggle().css('display', 'flex');
-});
 
+function toggleMenu() {
+	var $nav = $(".main-nav"),
+			$toggle = $(".toggle-mnu");
+	$toggle.click(function() {
+		$(this).toggleClass("on");
+		$nav.slideToggle().css('display', 'flex');
+	});
+	$(window).resize(function () {
+		if ( $(window).width() > 1024){
+			$nav.removeAttr('style');
+		}
+	});
+}
+toggleMenu();
 // ========================= ONEPAGE SCROLL START
 $(".section-wrap").onepage_scroll({
    sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section

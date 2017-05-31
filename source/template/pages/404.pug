@@ -4,3 +4,24 @@ block variables
 	- var title = 'Ошибка 404'
 
 block content
+	.error
+		.logo
+		.container-fluid
+			.error-item.col-lg-6.col-md-6
+				.error-item__wrap
+					.error-item__image
+						img(src="/assets/img/ic-404.svg", alt="")
+					.error-item__title Страница не найдена
+					.error-item__text К сожалению, такой страницы не существует. Вероятно, она была удалена, либо её здесь никогда не было. Переходите на главную страницу – там Вы сможете найти много полезной информации
+					a(href="index.html").error-item__btn.gl-btn На главную
+				.error-footer
+					.error-footer__call Позвоните нам 
+						span.span--red
+							a(href="tel: +74957755575") +7 495 775 55 75
+					.error-footer__write Напишите нам 
+						span.span--red
+							a(href="mailto:hello@hismith.ru") hello@hismith.ru
+					.error-footer__come Приезжайте к нам 
+						span.span--red.
+							в Москву
+			.col-lg-5.col-md-6.hidden-sm

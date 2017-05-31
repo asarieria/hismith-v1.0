@@ -13,6 +13,7 @@ module.exports = function() {
           $('[fill]').removeAttr('fill');
           $('[stroke]').removeAttr('stroke');
           $('[style]').removeAttr('style');
+          $('svg').attr('style',  'display:none');
         },
         parserOptions: { xmlMode: true }
       }))
@@ -20,9 +21,10 @@ module.exports = function() {
       .pipe($.gp.svgSprite({
         mode: {
           symbol: {
-            sprite: "../sprite.svg"
+            sprite: "../symbol_sprite.html"
           }
-        }
+        },
+        selector: "icon-%f"
       }))
       .pipe($.gulp.dest($.config.root + '/assets/img'))
   })
